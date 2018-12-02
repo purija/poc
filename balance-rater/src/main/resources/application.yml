@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bilance
+    username: postgresql
+    password: postgresql
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        ddl-auto: update
+  thymeleaf:
+    cache: false
+    prefix: file:src/main/resources/templates/
